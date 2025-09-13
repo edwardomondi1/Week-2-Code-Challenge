@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flatacuties</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #character-list {
+      margin-bottom: 20px;
+    }
+    .character-name {
+      cursor: pointer;
+      padding: 5px;
+      border: 1px solid #ccc;
+      margin: 2px;
+      display: inline-block;
+    }
+    .character-name:hover {
+      background-color: #f0f0f0;
+    }
+    #character-details {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    #character-details img {
+      max-width: 300px;
+    }
+    #vote-form {
+      margin-bottom: 20px;
+    }
+    #reset-btn {
+      margin-bottom: 20px;
+    }
+    #add-form {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Flatacuties - Vote for the Cutest Animal!</h1>
+  
+  <div id="character-list">
+    <h2>Animal Names</h2>
+    <!-- Character names will be populated here -->
+  </div>
+  
+  <div id="character-details">
+    <h2>Animal Details</h2>
+    <!-- Details will be shown here -->
+  </div>
+  
+  <button id="reset-btn">Reset All Votes</button>
+  
+  <div id="add-form">
+    <h2>Add New Animal</h2>
+    <form id="new-animal-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="image">Image URL:</label>
+      <input type="url" id="image" required>
+      <button type="submit">Add Animal</button>
+    </form>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
